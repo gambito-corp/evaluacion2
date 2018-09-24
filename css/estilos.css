@@ -1,3 +1,5 @@
+/*aunque sea anti estetico tipeare el codigo css de 2 formas, la primera en forma de cascada y la segunda haciendo objetivo a clases y id . y # */
+
 *{
     margin: 0;
     padding: 0;
@@ -13,23 +15,33 @@
             background-color: #5b7989;
             margin: 0 10%;
             padding-bottom: 1%;
+            border-radius: 10px;
         }
-            body header h1{
+            body header section h1{
                 color: #fff;
-                padding-top: 3%
+                padding-top: 3%;
             }
-            body header ul{
+            body header section ul{
                 list-style: none;
                 text-align: right;
                 margin: -2% 10% 0 15%;
 
 
             }
-                body header ul li{
+                body header section ul li{
                     display: inline-block;
                     padding-bottom: 2%;
                     padding-left: 3%
                 }
-                     body header ul li a{
+                    body header section ul li a{
                         color: #fff;
-                     }
+                    }
+        body header section div{
+            background-color:  #82c3a6;
+            width: 100%;
+            display:flex; justify-content:center; 
+        }
+            body header section div img{
+                margin: 0 auto;
+                width: 700px;
+            }
