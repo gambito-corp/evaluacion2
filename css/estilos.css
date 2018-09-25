@@ -11,17 +11,17 @@
     body{
         background-color: #02010a;    
     }
-        header{
+        .cabecera{
             background-color: #5b7989;
             margin: 0 10%;
             padding-bottom: 1%;
-            border-radius: 10px;
+            border-radius: 10px 10px 0 0;
         }
-                header .primero h1{
+                .cabecera .primero h1{
                     color: #fff;
                     padding-top: 3%;
                 }
-                header .primero ul{
+                .cabecera .primero ul{
                     list-style: none;
                     text-align: right;
                     margin: -2% 10% 0 15%;
@@ -34,11 +34,14 @@
                         .primero ul li a{
                             color: #fff;
                             }
-
-            header  .segundo{
+        .main{
+            margin: 0 10%;
+        }
+            .main  .segundo{
                 background-color:  #82c3a6;
                 width: 100%;
-                display:flex; justify-content:center; 
+                display:flex; 
+                justify-content:center; 
             }
                 .segundo .cont-img{
                 }
@@ -48,16 +51,103 @@
                         height: 400px;
                         border: 1px solid black;
                     }
-            header .tercero{
-                background-color:#d5c75;
+            .main .tercero{
+                background-color: #d5c75f;
                 width: 100%;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
+                justify-content:center;
             }
-                header .tercero .montana{
-                    width: 50%;
+                .main .tercero .montana{
+                    width: 425px;
+                    height: 300px;
+                    /*padding-left: 10px;*/
+                    margin-right: 25px;
+                    margin-top: 20px;
+                    border: 1px solid black;
+                    -webkit-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                    -webkit-transition: all 1s ease;
+                    -o-transition: all 1s ease;
+                    transition: all 1s ease;
                 }
-                header .tercero .nino{
-                    width: 50%;
+                    .main .tercero .montana:hover{
+                        -webkit-transform: rotate(10deg);
+                        -ms-transform: rotate(10deg);
+                        -o-transform: rotate(10deg);
+                        transform: rotate(10deg);
+                        border: 2px solid black;
+                        box-shadow: 10px 16px #82c3a6;
+                    }
+                .main .tercero .nino{
+                    width: 425px;
+                    height: 300px;
+                    /*padding-left: 10px;*/
+                    margin-left: 25px;
+                    margin-top: 20px;
+                    border: 1px solid black;
+                    -webkit-transform: translate(0,0);
+                    -ms-transform: translate(0,0);
+                    -o-transform: translate(0,0);
+                    transform: translate(0,0);
+                    -webkit-transition: all 1s ease;
+                    -o-transition: all 1s ease;
+                    transition: all 1s ease;
                 }
+                    .main .tercero .nino:hover{
+                        -webkit-transform: translate(20px, -5px);
+                        -ms-transform: translate(20px, -5px);
+                        -o-transform: translate(20px, -5px);
+                        transform: translate(20px, -5px);
+                        border: 2px solid black;
+                        box-shadow: 10px 16px #82c3a6;
+                    }
+        .pie{
+            background-color: #C6d5c5;
+            /*height: 100px;*/
+            margin: 0 10%;
+            padding-bottom: 1%;
+            border-radius: 0 0 10px 10px;
+            text-align: center;
+            line-height: 30px;
+        }
+            .col-pc{
+                width: 20%;
+                margin:0 15px;
+                padding: 0 10px;
+                display: inline-block;
+            }
+            .tabla_f{
+                color:#020202;
+            }
+            .tabla_f ul li{
+                list-style: none;
+                text-align: left;
+            }
+            .tabla_f ul li a span img{
+                width: 20px;
+            }
+            .tabla_f ul li a{
+                text-decoration: none;
+                color:black;
+            }
+
+
+/*final de la version pc*/
+/*inicio de la version celular*/
+
+/*final de la version celular*/
+
+/*inicio del keyframe*/
+@-webkit-keyframes animacion1{
+    0%{}
+    60%{}
+    100%{}
+}
+/*final del keyframe*/
+            
+
+
