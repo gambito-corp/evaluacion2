@@ -16,6 +16,7 @@
             margin: 0 10%;
             padding-bottom: 1%;
             border-radius: 10px 10px 0 0;
+            animation:animacion1 3s;
         }
                 .cabecera .primero h1{
                     color: #fff;
@@ -58,6 +59,7 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content:center;
+                padding-bottom: 22px;
             }
                 .main .tercero .montana{
                     width: 425px;
@@ -109,6 +111,7 @@
             background-color: #C6d5c5;
             /*height: 100px;*/
             margin: 0 10%;
+            padding-top: 20px;
             padding-bottom: 1%;
             border-radius: 0 0 10px 10px;
             text-align: center;
@@ -134,8 +137,33 @@
                 text-decoration: none;
                 color:black;
             }
-
-
+            .col-pc2{
+                width: 30%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .tercero .galeria{
+                margin: 15px 20px;
+                width: 250px;
+                height: 250px;
+                border: 1px solid #020202;
+            }
+            .blur{
+                -webkit-filter: blur(10px);
+                -o-filter: blur(10px);
+                filter: blur(10px);
+            }
+            .gris{
+                -webkit-filter: grayscale(.5);
+                -o-filter: grayscale(.5);
+                filter: grayscale(.5);
+            }
+            .sepia{
+                -webkit-filter: sepia(90%);
+                -o-filter: sepia(90%);
+                filter: sepia(90%);
+            }
 /*final de la version pc*/
 /*inicio de la version celular*/
 
@@ -143,9 +171,15 @@
 
 /*inicio del keyframe*/
 @-webkit-keyframes animacion1{
-    0%{}
-    60%{}
-    100%{}
+    0%{
+        margin-top: 150%;
+    }
+    60%{
+        margin-top: -5%;
+    }
+    100%{
+        margin-top: 0%
+    }
 }
 /*final del keyframe*/
             
